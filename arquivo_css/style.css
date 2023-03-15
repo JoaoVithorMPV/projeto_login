@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5f2c82;
+  position: relative;
+}
+
+section#login {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  width: 250px;
+  height: 515px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+
+  transition: 0.25s;
+  transition-timing-function: ease;
+}
+
+div.campo {
+  background-color: #5f2c82;
+  border: 2px solid #5f2c82;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+div#img {
+  display: block;
+  background: #5f2c82 url(../img/01-bckg.jpg);
+  height: 200px;
+  background-position: top center;
+  background-size: cover;
+}
+
+div#formulario {
+  display: block;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div#formulario > p {
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+div.campo > label {
+  display: none;
+}
+
+div.campo > span {
+  color: white;
+  /*background-color: black;*/
+  font-size: 1.9em;
+  width: 40px;
+  padding: 5px;
+}
+
+div.campo > input {
+  background-color: #94cfcd;
+  font-size: 1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-10px);
+}
+
+div.campo > input:hover {
+  background: white;
+  outline: none;
+}
+
+input#botao {
+  background-color: #40918e;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  transition: 0.25s;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+input#botao:hover {
+  background-color: #306966;
+  cursor: pointer;
+}
+
+a#esqueci {
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  border: 1px solid #40918e;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #306966;
+  padding-top: 11px;
+}
+
+a#esqueci:hover {
+  background: #40918e;
+  color: white;
+}
+
+a#esqueci > span {
+  font-size: 1em;
+  transform: translate(1%, 25%);
+}
